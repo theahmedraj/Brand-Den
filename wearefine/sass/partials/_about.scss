@@ -1,0 +1,42 @@
+.wrapper {
+    .about {
+        background: $white;
+        padding: 20px;
+        .about-logo {
+            text-align: center;
+            a {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+        .about-words {
+            p {
+                font-family: $font;
+                font-size: 16px;
+                color: black;
+                padding: 10px;
+                line-height: 30px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .wrapper {
+        .about {
+            .about-words {
+                p {
+                    font-family: $font;
+                    font-size: 14px;
+                    color: black;
+                    padding: 10px;
+                    line-height: 30px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

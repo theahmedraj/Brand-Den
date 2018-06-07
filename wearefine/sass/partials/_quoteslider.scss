@@ -1,0 +1,152 @@
+
+
+.slideshow-container {
+    position: relative;
+    background: white;
+}
+
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+blockquote {
+    font-size: 3rem;
+}
+
+blockquote q {
+    font-family: $font;
+    font-style: italic;
+    letter-spacing: .1rem;
+}
+
+blockquote q span {
+    will-change: opacity, filter;
+    opacity: 0;
+    filter: blur(0px);
+}
+
+q {
+    quotes: "“" "”" "‘" "’";
+}
+
+q:before {
+    content: open-quote;
+    margin-right: .8rem;
+}
+
+q:after {
+    content: close-quote;
+}
+
+q:before,
+q:after {
+    color: #000;
+    padding: 10px;
+    font-size: 4rem;
+}
+
+@media (max-width:480px) {
+    .mySlides {
+        display: none;
+        padding: 25px;
+        text-align: center;
+    }
+    blockquote {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        line-height: 30px;
+    }
+    blockquote q {
+        text-indent: 0px;
+        font-family: $font;
+        font-style: italic;
+        letter-spacing: 0rem;
+    }
+    .prev:hover,
+    .next:hover {
+        background: transparent;
+        color: black;
+    }
+    q:before,
+    q:after {
+        color: #000;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width:780px) {
+    .mySlides {
+        display: none;
+        padding: 40px;
+        text-align: center;
+    }
+    blockquote {
+        font-size: 1rem;
+    }
+    blockquote q {
+        font-family: $font;
+        font-style: italic;
+        letter-spacing: 0rem;
+    }
+    q:before,
+    q:after {
+        color: #000;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+}

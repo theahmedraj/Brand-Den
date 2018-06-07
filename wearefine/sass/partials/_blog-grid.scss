@@ -1,0 +1,82 @@
+.wrapper {
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        margin: 15px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-items: center;
+        grid-gap: 5px;
+        justify-content: center;
+        a {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            border: none;
+            display: block;
+            img {
+                max-width: 100%;
+                filter: grayscale(100%);
+                transition: 1s;
+                &:hover {
+                    filter: grayscale(0%);
+                }
+            }
+        }
+        .blog-info {
+            background: $semiblack;
+            a {
+                text-decoration: none;
+                font-family: $font;
+                font-size: 16px;
+                color: $semiwhite;
+                padding: 0;
+                margin: 0;
+                display: block;
+                P {
+                    padding: 10px;
+                    margin: 0;
+                    text-align: center;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:900px) {
+    .wrapper {
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            margin: 15px;
+            box-sizing: border-box;
+            align-items: center;
+            justify-items: center;
+            grid-gap: 5px;
+            justify-content: center;
+        }
+        .blog-info {
+            background: $semiblack;
+            a {
+                text-decoration: none;
+                font-family: $font;
+                font-size: 14px;
+                color: $semiwhite;
+                padding: 0;
+                margin: 0;
+                display: block;
+                P {
+                    padding: 10px;
+                    margin: 0;
+                    text-align: center;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}

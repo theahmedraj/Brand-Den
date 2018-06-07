@@ -1,0 +1,18 @@
+@import "typhography/_fonts.scss";
+@import "colors/_color.scss";
+@import "partials/_scrollbutton.scss";
+@import "partials/_navbar.scss";
+@import "partials/_quoteslider.scss";
+@import "partials/_gallery.scss";
+@import "partials/_info.scss";
+@import "partials/_brand.scss";
+@import "partials/_blog-grid.scss";
+@import "partials/_login.scss";
+@import "partials/_about.scss";
+@import "partials/_footer.scss";
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

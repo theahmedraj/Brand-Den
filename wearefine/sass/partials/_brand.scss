@@ -1,0 +1,42 @@
+.wrapper {
+    .brand {
+        margin: 0 auto;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+        background: #000;
+        align-items: center;
+        justify-items: center;
+        .brand-img {
+            img {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+                font-size: 25px;
+                color: $white;
+                text-align: center;
+                display: block;
+                width: 250px;
+                font-family: $font;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+@media(max-width:780px) {
+    .wrapper {
+        .brand {
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+            background: #000;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}

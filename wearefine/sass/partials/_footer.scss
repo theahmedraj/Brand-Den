@@ -1,0 +1,127 @@
+.wrapper {
+    footer {
+        background: $black;
+        font-family: $font;
+        .footer-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            .footer-blog-info {
+                padding: 30px;
+                a {
+                    text-decoration: none;
+                    font-family: $font;
+                    font-size: 14px;
+                    color: $semiwhite;
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+                    P {
+                        padding: 10px;
+                        margin: 0;
+                        text-align: left;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-work {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            .ft {
+                padding: 0;
+                margin: 0;
+                h4 {
+                    color: white;
+                    font-size: 20px;
+                    padding: 10px;
+                }
+                ul {
+                    list-style: none;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 14px;
+                            &:hover {
+                                opacity: 0.6;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .social-icon {
+            ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: repeat(4, 50px);
+                padding: 10px;
+                justify-content: center;
+                grid-gap: 10px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 1);
+                    font-size: 22px;
+                    text-align: center;
+                    padding: 12px;
+                    height: 50px;
+                    width: 50px;
+                    transition: 1s;
+                    background: #fff;
+                    border-radius: 25px;
+                    #fb:hover {
+                        color: blue;
+                        transform: scale(1.2);
+                    }
+                    #it:hover {
+                        color: #e94057;
+                        transform: scale(1.2);
+                    }
+                    #fc:hover {
+                        color: #00ff2a;
+                        transform: scale(1.2);
+                    }
+                    #tt:hover {
+                        color: #00c3ff;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+        .web-foot {
+            padding: 50px;
+            ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+                justify-content: center;
+                grid-gap: 10px;
+                list-style: none;
+                align-items: center;
+                justify-items: center;
+                padding: 0;
+                text-align: center;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 16px;
+                        &:hover {
+                            opacity: 0.6;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

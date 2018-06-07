@@ -1,0 +1,19 @@
+#myScrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    background: #EF3B36;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #EF3B36);
+    background: linear-gradient(to right, #FFFFFF, #EF3B36);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+}
